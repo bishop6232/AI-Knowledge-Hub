@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+body{
+    background-color: white;
+}
+h1{
+    font-size: 35px;
+    text-align: center;
+    color:white;
+    padding: 20px;
+    
+}
+h2{
+    text-align: center;
+    font-weight: 800;
+}
+header{
+    
+   background-color:midnightblue;
+   padding: 20px;
+  display: grid;
+  margin: 0;
+}
+#main-nav a{
+    color: white;
+    font-family: Georgia, serif;
+	font-size: 20px;
+    cursor: pointer;
+    padding-right: 5px;
+
+}
+#main-nav{
+    padding-top: 30px;
+}
+
+#main-nav a:hover{
+    color:burlywood;
+}
+
+
+.domains{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 10px;
+}
+
+ section #health img{
+    width: 50px; height: 50px;
+    overflow: hidden;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+section #finance img{
+    width: 55px; height: 50px;
+    overflow: hidden;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+section #transportation img{
+    width: 55px; height: 50px;
+    overflow: hidden;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+section article {
+font-family:monospace;
+background-image: url(ai-blog.png);
+color:white;
+
+}
+section article a:hover{
+    font-size: 20px;
+    transition: 3s;
+    color: green;
+}
+.changeMood{
+    margin-left: auto;
+    margin-right: 10px ;
+    background-color:teal;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 0;
+    border-style:ridge;
+    width: 200px;
+    width: fit-content;
+    font-weight: bold;
+
+}
+a{
+    color:coral;
+}
+div img{
+    width: 200px; height: 150px;
+    display: grid;
+    grid-row:auto;
+    padding: 5px;
+    margin-top: 10px;
+}
+ p{
+    margin: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    font-size: large;
+   
+}
+.risk img{
+    width: 100px;
+    border: 1px solid black;
+}
+button{
+   
+    font-size: large;
+    background-color:deepskyblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;  
+
+}
+button:hover{
+    
+    background-color:blue;
+}
+button:focus{
+    background-color: green;
+}
+.quizHeader{
+    font-size: 30px;
+}
+
+.riskcss{
+    font-size: 30px;
+}
+
+.quizSet{
+    
+}
+.quizSet p{
+   font-family:Arial, Helvetica, sans-serif;
+   
+}
+.quizH2{
+    font-size: 15px;
+    text-align: left;
+    font-size: large;
+   padding: 5px;
+
+}
+.answer{
+    cursor: pointer;
+    padding:5px;
+    margin: 9px;
+}
+
+.quizSummary{
+    display: none;
+    margin-bottom: 20px;
+}
+.instaProfile img{
+    width: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.instaProfile{
+    text-align: right;
+
+}
+
+footer{
+    text-align: center;
+    justify-content: center;
+    color:darkorange;
+}
+h4{
+    color:cornflowerblue;
+    text-decoration: underline;
+}
+.horizontal li{
+   
+    border-right: 1px solid;
+    border-color: white;
+  padding-right: 5px;
+  margin-left: 3px;
+ 
+}
+.horizontal a{
+    font-size: large;
+}
+
+.horizontal {
+    margin-left: auto;
+    margin-right: auto;
+}
+tr{
+    
+    background-color:midnightblue;
+
+}
+th{
+    border-right: 1px solid;
+    color: white;
+    padding-right: 5px;
+}
+.horizontal th:last-of-type{
+    border: none;
+    
+ }
+.secondSubmitBtn{
+    display: none;
+}
+
+

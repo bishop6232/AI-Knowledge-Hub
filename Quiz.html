@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="landingPage.css">
+</head>
+
+<body>
+    <header> 
+        <h1 class="quizHeader">this is a short test on AI Benefits and Risks</h1>
+        <nav id="main-nav" >
+            <table class="horizontal">
+                <tr>
+                    <th id="first"><a href="index.html">Home</a></th>
+                    <th id="second"><a href="benefit.html"> Benefits of AI</a></th>
+                    <th id="third"><a href="risk.html"> The risks associated with AI</a></th>
+                    <th id="fourth"><a href="Quiz.html">QUIZ</a></th>
+                </tr>
+            </table>
+        </nav>
+        <button id="save" class="changeMood" onclick="changeMood()">change to dark mood</button>
+    </header>
+
+    <main>
+        
+       
+     <div  id="quizForm" class="quizSet">
+        <h2 class="quizH2" > here is the list of questions:</h2>
+        <div class="question1">
+            <h3 >Question 1:</h3>
+            <p>AI can be used to automate repetitive tasks?</p>
+            <input class="answer" type="radio" name="question1" value="true">a: True<br>
+            <input class="answer" type="radio" name="question1" value="false">b: False<br>
+
+            <button id="next" class="nextQuestion" onclick="showquestion2()">Next</button>
+           </div>
+    
+           <div style="display: none;" class="question2" id="q2">
+            <h3 >Question 2:</h3>
+            <p>What is one potential benefit of AI?</p>
+            <input class="answer" type="radio" name="question2" value="a">a: Decision Making <br>
+            <input class="answer" type="radio" name="question2" value="b">b: Decreased data security<br>
+            <input class="answer"  type="radio" name="question2" value="c">c: Higher operating costs<br>
+
+            <button id="next" class="nextQuestion" onclick="showquestion3()">Next</button> 
+           </div>
+           
+           <div style="display: none;" class="question3", id="q3">
+            <h3   >Question 3:</h3>
+            <p>Which of the following is a risk associated with AI?</p>
+            <input class="answer" type="radio" name="question3" value="a">a: Job displacement<br>
+            <input class="answer" type="radio" name="question3" value="b">b: Enhanced privacy protection<br>
+            <input class="answer" type="radio" name="question3" value="c">c: Reduced decision-making capabilities<br>
+            <button id="next" class="nextQuestion" onclick="showquestion4()">Next</button>
+           </div>
+           
+           <div style="display: none;", class="question4", id="q4">
+            <h3  >Question 4:</h3>
+            <p>What is the main goal of natural language processing (NLP)?</p>
+            <input class="answer" type="radio" name="question4" value="a">a: Speech recognition<br>
+            <input class="answer" type="radio" name="question4" value="b">b: Text-to-speech conversion<br>
+            <input class="answer" type="radio" name="question4" value="c">c: Sentiment analysis<br>
+          
+            <button id="next" class="nextQuestion" onclick="showquestion5()">Next</button>
+           </div>
+        
+           <div  style="display: none;", class="question5", id="q5">
+            <h3>Question 5:</h3>
+            <p>Name one real-world application of AI that you find interesting and explain why</p>
+            <textarea name="question5" rows="4" cols="50"></textarea>
+                <br>
+            <button onclick="showSummary()" class="Submit" type="submit" value="submit">Submit</button>
+        </div>
+    </div>
+        
+        <div class="quizSummary" id="quizSummary">
+            <h2>Quiz Summary</h2>
+            <div id="answers"></div>
+            <p>Grade: <span id="grade"></span>/10</p>
+            <p class="js-askEmail">Would you like to receive the summary via email? <input type="checkbox" id="emailCheckbox"></p>
+            <div id="emailField" style="display: none;">
+              <label for="email">Email Address:</label>
+              <input placeholder="email Address" type="email" id="email" name="email" required><br>
+              <div style="display: none;" id="sent"></div>
+            </div>
+            <button class="firstSubmitBtn" onclick="showEmailField()">Submit</button>
+            <button class="secondSubmitBtn" onclick="showMessage()">Submit</button>
+          </div>
+
+    </main>
+    <script src="quiz.js"></script>
+</body>
+
+
+
+</html>
