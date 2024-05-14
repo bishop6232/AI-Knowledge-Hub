@@ -1,5 +1,5 @@
 
-    function changeMood() {
+function changeMood() {
         const body = document.body;
         const bgColor = body.style.backgroundColor;
         const textColor = body.style.color;
@@ -22,7 +22,7 @@
       const savedMode = localStorage.getItem("mode");
       if (savedMode === "dark") {
         changeMood();
-}
+      }
     
 function showSummary() {
   document.getElementById("quizForm").style.display = "none";

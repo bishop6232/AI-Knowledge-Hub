@@ -10,7 +10,9 @@ html{
 }
 body{
     background-color: white;
+    
 }
+
 h1{
     font-size: 35px;
     text-align: center;
@@ -22,28 +24,18 @@ h2{
     text-align: center;
     font-weight: 800;
 }
+h3{
+    text-align: center;
+    font-size:x-large;
+}
 header{
     
-   background-color:midnightblue;
+    background: linear-gradient(to right,#242729, #133e73 );
    padding: 20px;
   display: grid;
-  margin: 0;
-}
-#main-nav a{
-    color: white;
-    font-family: Georgia, serif;
-	font-size: 20px;
-    cursor: pointer;
-    padding-right: 5px;
-
-}
-#main-nav{
-    padding-top: 30px;
+  margin-top: 50px;
 }
 
-#main-nav a:hover{
-    color:burlywood;
-}
 
 
 .domains{
@@ -76,8 +68,7 @@ section #transportation img{
 
 section article {
 font-family:monospace;
-background-image: url(ai-blog.png);
-color:white;
+
 
 }
 section article a:hover{
@@ -184,44 +175,105 @@ button:focus{
 footer{
     text-align: center;
     justify-content: center;
-    color:darkorange;
+  
 }
 h4{
     color:cornflowerblue;
     text-decoration: underline;
 }
-.horizontal li{
-   
-    border-right: 1px solid;
-    border-color: white;
-  padding-right: 5px;
-  margin-left: 3px;
- 
-}
-.horizontal a{
-    font-size: large;
-}
 
-.horizontal {
-    margin-left: auto;
-    margin-right: auto;
-}
-tr{
-    
-    background-color:midnightblue;
-
-}
-th{
-    border-right: 1px solid;
-    color: white;
-    padding-right: 5px;
-}
-.horizontal th:last-of-type{
-    border: none;
-    
- }
 .secondSubmitBtn{
     display: none;
 }
 
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    align-items: center;
+    background: linear-gradient(to right,#242729, #133e73 );
+    box-shadow: 0 4px 8px 0 rgba(0,  0, 0, 0.2  ), 0 6px 20px 0 rgba(0  ,  0, 0, 0.19);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+    }
+    
+    #nav {
+      
+     display: flex;
+     justify-content: center;
+     align-items: center;
+      font-size: x-large;
+      margin-bottom: 10;
+    }
+    
+    #nav a:hover{
+      color: #f9d68a;
+    }
 
+    #main-nav a{
+        margin-right: 20px;
+        color: white;
+        font-family: Georgia, serif;
+        font-size: 20px;
+        cursor: pointer;
+        padding-right: 5px;
+        text-decoration: none;
+        
+    
+    }
+   
+    #main-nav a:hover{
+        color:burlywood;
+        text-decoration: underline;
+    }
+
+    .horizontal li{
+
+      border-color: white;
+      padding-right: 5px;
+      margin-left: 3px;
+     
+    }
+    
+    th{
+        padding-left: 10px;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid;
+        color: white;
+        padding-right: 5px;
+    }
+    .horizontal th:last-of-type{
+        border: none;
+        
+     }
+
+     @media screen and (max-width:720px) {
+        .horizontal{
+            flex-direction: column;
+              justify-content: center;
+              align-items:stretch;
+              text-align:center;
+              box-shadow: none;
+              position:fixed;
+              font-size: 10px;
+              padding-bottom: 6px;
+        }
+        #main-nav{
+          padding-top: 5px;
+          margin-left: 20px;
+          gap: 10px;
+          display: grid;
+          grid-template-columns:  repeat(4, 1fr);
+         
+        }
+     }
