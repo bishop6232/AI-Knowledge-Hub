@@ -3,6 +3,15 @@ function changeMood() {
         const body = document.body;
         const bgColor = body.style.backgroundColor;
         const textColor = body.style.color;
+        const button = document.querySelector('.changeMood');
+        const originalColor = 'darkgray';
+        const activeColor = 'green';
+
+        if (button.style.backgroundColor === activeColor) {
+            button.style.backgroundColor = originalColor;
+        } else {
+            button.style.backgroundColor = activeColor;
+        }
       
         if (bgColor === "black" && textColor === "white") {
           //  remove dark mode if it is already active,
