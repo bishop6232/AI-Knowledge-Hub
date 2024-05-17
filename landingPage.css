@@ -258,22 +258,14 @@ h4{
      }
 
      @media screen and (max-width:720px) {
-        .horizontal{
-            flex-direction: column;
-              justify-content: center;
-              align-items:stretch;
-              text-align:center;
-              box-shadow: none;
-              position:fixed;
-              font-size: 10px;
-              padding-bottom: 6px;
-        }
-        #main-nav{
-          padding-top: 5px;
-          margin-left: 20px;
-          gap: 10px;
-          display: grid;
-          grid-template-columns:  repeat(4, 1fr);
-         
-        }
+        .horizontal {
+            font-size: 14px; 
+            padding: 10px 0; 
+          }
+          
+          #main-nav a {
+            margin-right: 10px;
+            font-size: 10px;
+          }
+
      }
