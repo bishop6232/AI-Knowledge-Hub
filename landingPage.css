@@ -108,7 +108,7 @@ div img{
 }
 .risk img{
     object-fit: cover;
-    width: fit-content;
+    width: 50%;
     border: 1px solid black;
 }
 button{
